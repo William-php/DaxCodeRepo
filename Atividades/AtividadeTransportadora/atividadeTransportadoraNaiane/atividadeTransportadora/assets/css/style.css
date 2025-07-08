@@ -162,7 +162,7 @@ button{
 footer{
     background-color: #545454;
     height: 5rem;
-    
+
     display: flex;
     justify-content: end;
     align-items: center;
@@ -216,6 +216,50 @@ footer p{
 
     input {
         padding: 1.75rem;
+    }
+}
+
+@media (max-width: 400px) {
+    ul {
+        align-items: center;
+    }
+
+    h2 {
+        margin: 24vh 2vw 12vh;
+    }
+
+    p {
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    .container-img-caminhao-branco {
+        width: 284px;
+    }
+
+    /*servicos*/
+    .itens-servicos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+    }
+
+    .item-servico {
+        width: 312px;
+    }
+
+    form {
+        width: 180%;
+    }
+
+    button {
+        padding: 2rem;
+    }
+
+    footer p {
+        font-size: 2vh;
+        font-weight: 600;
     }
 }
 
