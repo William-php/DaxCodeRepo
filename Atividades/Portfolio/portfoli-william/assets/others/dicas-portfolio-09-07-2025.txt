@@ -1,0 +1,23 @@
+dicas aula de hoje:
+1 - Usar tag:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+Essa tag irá configurar a janela de visualização de sua página, dando ao navegador instruções de como controlar dimensões e a escalar melhor a página;
+
+2 - Imagens responsivas:
+img {
+	width: 100%;
+	height: auto;
+}
+
+3 - Use ViewWidth (vw) para texto, pois ele adpata melhor em diferentes dispositivos;
+
+Sites:
+https://cssgradient.io/
+https://getwaves.io/
+https://www.remove.bg/pt-br
+https://undraw.co/
+https://pixabay.com/
+https://color.adobe.com/pt/create
+https://fonts.google.com/
+https://cssgenerator.org/box-shadow-css-generator.html
+https://fontawesome.com/
