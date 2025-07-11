@@ -10,7 +10,7 @@
 * Meta tags de autor e descrição.
 * Pelo menos 1 imagem.
 * 1 menu de navegação com no mínimo 3 opções (ex.: Sobre Mim, Projetos, Contatos).
-* 1 tabela (sugestão: tabela de habilidades).
+* 1 tabela (sugestão: tabela de habilidades) - opcional.
 * 1 formulário de contato.
 
 ## Conteúdo Adicional

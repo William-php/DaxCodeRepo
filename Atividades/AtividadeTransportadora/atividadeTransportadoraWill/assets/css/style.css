@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-shadow-h1: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    --color-p: #333;
+    --bg-color: #545454
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 120px;
+    background: var(--bg-color);
+}
+
+ul li {
+    display: inline-block;   
+}       
+/*teste*/
+a {
+    margin: 0 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+a:hover {
+    color: #ddd;
+}
+
+
+h2 {
+    font-size: 5vw;
+    text-align: center;
+    margin-bottom: 40px;
+}   
+
+h3 {
+    font-size: 2vw;
+    text-align: center;
+    padding: 2rem;
+}
+
+section {
+    min-height: 100vh;
+    padding: 60px 20px;
+    width: 100%;
+    
+    
+    display: flex;
+    justify-content: center;
+    flex-direction:  column;
+    align-items: center;
+    gap: 80px;
+}
+
+#inicio {
+    background-image: url("../images/caminhaoBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    max-width: 80%;
+    font-size: 6vw;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.3);
+    text-shadow: var(--text-shadow-h1);
+}
+
+p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--color-p);
+    text-align: center;
+}
+
+/* #quem-somos {
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    gap: 128px;
+} */
+
+
+
+.container-quem-somos {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
+    
+    gap: 60px;
+    width: 80%;
+}
+
+.container-quem-somos > p {    
+    text-align: center;
+    letter-spacing: normal;
+    font-size: 1.2rem;
+}
+
+.container-img-quem-somos {
+    width: 360px;        
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* #servicos {
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    gap: 128px;
+} */
+
+.container-card-servicos {
+    display: flex;
+    gap: 8rem;    
+    padding: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}   
+
+.card-servicos {
+    width: 300px;
+    border: 2px solid #545454;
+}
+
+.card-img-servicos {
+    width: 100%;
+}
+
+
+.container-form-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    padding: 2rem;
+    gap: 80px;
+
+}
+.container-form-p > p{
+    max-width: 30%;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 1rem;
+}
+
+label {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+
+
+button {
+    width: 80px;
+    padding: 8px;
+    font-size: 1.15rem;
+    align-self: self-end;
+
+
+    background: #545454;
+    color: #fff;
+    border: none;
+
+    border-radius: 6px;   
+    text-transform: capitalize;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #545454;
+    background: #fff;
+    border: 1px solid #5454;
+}
+
+footer {
+    padding: 1.5rem;
+    background: var(--bg-color);
+    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+footer > span {
+    color: #fff;
+}
+
+/*Responsividade tela de celular*/
+
+@media (max-width: 390px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 1.5rem 0;
+        gap: 16px;         
+        background: #545454 !important;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    li {
+        display: none;
+    }
+    a {
+        text-align: center;
+        font-size: 8vw
+    }
+
+    #inicio {
+        background-position: center center;
+        
+    }
+    
+    h1 {
+        max-width: 92%;
+        font-size: 12vw;
+        text-transform: capitalize;
+    }
+    section {
+        justify-content: start;
+        gap: 40px;
+    }
+
+
+    h2 {
+        font-size: 8vw;
+        text-transform: capitalize;
+        margin-bottom: 24px;
+    }
+
+    h3 {
+        padding: 1.5rem;
+        font-size: 5vw;
+    }
+
+    .container-form-p {
+        gap: 92px;
+    }
+
+}
+ /*tablets 8' à 14' - */
+@media (min-width: 391px) {
+    header {
+        background: #ff0000;
+    }
+}
+
+/*notebooks 14' à 17'*/
+@media (min-width: 780px) {
+    header {
+        background: #545454
+    }
+}
